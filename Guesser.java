@@ -1,35 +1,15 @@
 import java.io.Console;
 
-/**
- * Assignment 1 - Guessing Game
- * 
- * Here's the unfinished source code
- * for the Guesser class. It is your
- * task to complete the missing parts.
- */
 public class Guesser{
   private int low;
   private int high;
 
-  /*
-   * Task 1. Write code here for a constructor
-   * which takes two int arguments and saves
-   * them in the instance variables low and high.
-   *
-   * If you don't remember the syntax for how to write
-   * constructors, revisit the chapter "Classes"
-   * and review the section about constructors.
-   *
-   */
+  public Guesser(int low, int high) {
+	this.low = low;
+	this.high = high;
+}
+
   
-  // Write the constructor below this line.
-
-
-  /*
-   * Task 2. Complete the start() method, so that
-   * in the method body, you call first the
-   * rules() method, next the doGuesses() method.
-   */
   public void start(){
     // call the rules method here
     // call the doGuesses() method here
