@@ -1,0 +1,23 @@
+1. pull används för att ladda ner senaste versionerna av filer från ett remote depository medan
+push används för att ladda upp de senaste versionerna av filerna som man själv har.
+
+2. log används för att se en lista på alla commits medan status används för att se vad man
+ändrat förtillället fast som ej är committat än.
+
+3. branch är ett "sidospår" från det som man arbetar med, är väldigt användbart om olika
+personer/grupper håller med olika "features" på olika håll. Det hindrar att diverse problem
+uppstår när man skall sammanfoga allt jobb. Det skulle också bli väldigt rörigt om alla är inne och
+pillar i en och samma "område".
+
+4. HEAD kallas det som "pekar" på vilken commit du befinner dig i, sedan har du arbetskatalogen och
+och till sist staging area, dit du addar filer fast innan du committar dom. Kommandot git reset har 
+tre olika nivåer:
+
+--mixed (som är standardläget, alltså om du bara skriver reset): flyttar HEAD, uppdaterar 
+staging area men lämnar arbetskatalogen orörd
+
+--soft: flyttar endast HEAD, ändrar inget annat
+
+--hard: flyttar HEAD och ändrar både staging area och arbetskatalogen
+
+Alla flyttar HEAD till den commit du anger: git reset --nivå <commit>
